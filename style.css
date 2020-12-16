@@ -22,28 +22,48 @@ ul {
 }
 
 li {
+    display: block;
     float: left;
+    margin: auto;
+    padding: auto;
+    line-height: 32px;
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 14px;
+    padding-bottom: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
     text-decoration: none;
+    line-height: 32px;
 }
 
 li span{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     text-decoration: none;
     font-size: 32px;
 }
 
+#sec-link a:hover{
+    background-color: #111;
+    line-height: 32px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 li a:hover {
     background-color: #111;
+    line-height: 32px;
 }
 
 #main{
@@ -63,4 +83,18 @@ li a:hover {
 
 #iphone{
     position: absolute;
+}
+
+.section-first{
+    padding-top:50px;
+    padding-left:20px;
+    height: 85vh;
+    background-color: aqua;
+}
+
+.section{
+    padding-top:50px;
+    padding-left:20px;
+    height: 100vh;
+    background-color: coral;
 }
