@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "ITC Kabel Std";
+    src: url("./fonts/ITCKabelStdBook.TTF");
+}
+
+body{
+    background-color: darkgrey;
+    font-family: "ITC Kabel Std";
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li span{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#main{
+    padding:20px;
+    margin-top:30px;
+}
+
+#phone{
+    height: 650px;
+}
+
+#app1{
+    border-radius: 17.544%;
+    margin-left: 50px;
+    margin-top: 65px;
+}
+
+#iphone{
+    position: absolute;
+}
