@@ -3,6 +3,25 @@
     src: url("./fonts/ITCKabelStdBook.TTF");
 }
 
+@font-face {
+    font-family: "ITC Kabel Std Bold";
+    src: url("./fonts/ITCKabelStdBold.TTF");
+}
+
+@font-face {
+    font-family: "ITC Kabel Std Demi";
+    src: url("./fonts/ITCKabelStdDemi.TTF");
+}
+
+@font-face {
+    font-family: "ITC Kabel Std Medium";
+    src: url("./fonts/ITCKabelStdMedium.TTF");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: darkgrey;
     font-family: "ITC Kabel Std";
@@ -10,91 +29,175 @@ body{
     padding: 0;
 }
 
-ul {
+.sidenav {
+    height: 100%;
+    width: 15vw;
     position: fixed;
+    z-index: 1;
     top: 0;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    display: block;
-    float: left;
-    margin: auto;
-    padding: auto;
-    line-height: 32px;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding-top: 14px;
-    padding-bottom: 2px;
-    padding-left: 16px;
-    padding-right: 16px;
-    text-decoration: none;
-    line-height: 32px;
-}
-
-li span{
-    display: block;
-    color: white;
-    text-align: center;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    text-decoration: none;
-    font-size: 32px;
-}
-
-#sec-link a:hover{
+    left: 0;
     background-color: #111;
-    line-height: 32px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 16px;
-    padding-right: 16px;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
-li a:hover {
-    background-color: #111;
-    line-height: 32px;
+#header{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: coral;
+    display: block;
+    font-family: "ITC Kabel Std Demi";
 }
 
-#main{
-    padding:20px;
-    margin-top:30px;
+#site-links {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
 }
 
-#phone{
-    height: 650px;
+#site-links:hover{
+    color: #f1f1f1;
 }
 
-#app1{
-    border-radius: 17.544%;
-    margin-left: 50px;
-    margin-top: 65px;
+.sidenav span {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
 }
 
-#iphone{
+#img-links{
+    margin-bottom: 26px;
+    float: bottom;
+    bottom: 0;
     position: absolute;
+    text-decoration: none;
+    color: #818181;
+    display: block;
 }
 
-.section-first{
-    padding-top:50px;
-    padding-left:20px;
-    height: 85vh;
-    background-color: aqua;
+#link-icon{
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    /*margin-left: 15vh; !* Same as the width of the sidenav *!*/
+    /*font-size: 28px; !* Increased text to enable scrolling *!*/
+    width: 85vw;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 .section{
-    padding-top:50px;
-    padding-left:20px;
+    position: absolute;
+    padding-left: 15vw;
     height: 100vh;
+    width: 85vw;
+
+    overflow: hidden;
+}
+
+#section1{
+    background-image: url("./images/sec1-back.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#section2{
+    margin-top: 100vh;
     background-color: coral;
+}
+
+#section3{
+    margin-top: 200vh;
+    background-color: #818181;
+}
+
+#section4{
+    margin-top: 300vh;
+    background-color: coral;
+}
+
+#mid-text{
+    color: #fff;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    margin-left: 60%;
+}
+
+#mid-text h1{
+    font-family: "ITC Kabel Std Bold";
+}
+
+#headshot{
+    width: 10vw;
+    border-radius: 10px;
+    border: 5px solid coral;
+}
+
+#section2 h1, #section4 h1{
+    font-family: "ITC Kabel Std Demi";
+    color: white;
+    padding-top: 0.25vh;
+}
+
+#section3 h1{
+    font-family: "ITC Kabel Std Demi";
+    color: black;
+    padding-top: 0.25vh;
+}
+
+#section2 h2{
+    font-family: "ITC Kabel Std Medium";
+    color: white;
+}
+
+#desc{
+    color: white;
+}
+
+#content{
+    padding-left: 2.5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    font-size: 20px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+#workplace{
+    font-family: "ITC Kabel Std Medium";
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+#job{
+    display: block;
+    font-size: 1.17em;
+    margin-top: 0.25em;
+    margin-bottom: 0.1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+#pdf-icon{
+    font-size: 1.17em;
+    height: 1.17em;
 }

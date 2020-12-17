@@ -2,48 +2,153 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<ul>
-    <li><span>Max Rosen - Developer</span></li>
-    <li id="sec-link"><a href="#section1">Home</a></li>
-    <li id="sec-link"><a href="#section2">Section 2</a></li>
+<div class="sidenav">
+    <span id="header">Max Rosen - Developer</span>
+    <a href="#section1" id="site-links">Home</a>
+    <a href="#section2" id="site-links">Work Experience</a>
+    <a href="#section3" id="site-links">Skills</a>
+    <a href="#section4" id="site-links">Projects</a>
 
+    <span id="img-links">
+        <a href="https://www.linkedin.com/in/maxfrosen/" target="_blank" id="link-icon">
+           <img src="./images/icons8-linkedin-240.png" height="32"/>
+        </a>
 
-    <li style="float:right"><a href="https://apps.apple.com/us/developer/max-rosen/id981342937">
-        <img src="./images/icons8-apple-logo-240.png" height="32"/ target="_blank">
-    </a></li>
-    <li style="float:right"><a href="https://github.com/maxrosen" target="_blank">
-        <img src="./images/icons8-github-240.png" height="32"/>
-    </a></li>
-    <li style="float:right"><a href="https://www.linkedin.com/in/maxfrosen/" target="_blank">
-        <img src="./images/icons8-linkedin-240.png" height="32"/>
-    </a></li>
-</ul>
+        <a href="https://github.com/maxrosen" target="_blank" id="link-icon">
+           <img src="./images/icons8-github-240.png" height="32"/>
+        </a>
 
-
-
-<div class="section-first" id="section1">
-    <h1>This is a heading</h1>
-    <p><b>This is a paragraph.</b></p>
+        <a href="https://apps.apple.com/us/developer/max-rosen/id981342937" target="_blank" id="link-icon">
+           <img src="./images/icons8-app-store-240.png" height="32"/>
+        </a>
+    </span>
 </div>
 
-<div class="section" id="section2">
-    <h1>This is a heading</h1>
-    <p><b>This is a paragraph.</b></p>
-</div>
+<div class="main">
 
-
-
-    <!-- An attempt to make a phone displaying my app icons...
-    <div id="phone">
-        <img id="iphone" src="./images/iphone_frame.png" height="100%"/>
-        <img id="app1" src="./images/w_icon.gif" height="15%"/>
+    <div class="section" id="section1">
+        <div id="mid-text">
+            <h1><b>Hi, I'm Max.</b></h1>
+            <img src="./images/headshot.jpg" id="headshot">
+            <h4>
+                I'm a Computer Science major at UMass - Amherst, Class of 2021. <br>
+            </h4>
+        </div>
     </div>
-    -->
 
+    <div class="section" id="section2">
+        <div id="content">
+            <h1>Work Experience</h1>
+            <ul style="list-style-type: none; padding-left: 20px;">
+                <li id="workplace"><b>The TJX Companies</b></li>
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li id="job">Software Engineer Intern II (2020)</li>
+                        <ul>
+                            <li id="desc"><i>Cancelled due to COVID-19</i></li>
+                            <li id="desc">Selected as a returning intern for the Robotic Process Automation team for Summer 2020</li>
+                        </ul>
+                    <li id="job">Software Engineer Intern I (May 2019-Aug 2019)</li>
+                        <ul>
+                            <li id="desc">Selected as the only intern on the mobile-app development team</li>
+                            <li id="desc">Utilized an agile framework to retrieve stories from JIRA Kanban board to develop new features</li>
+                            <li id="desc">Performed bug fixes on Xamarin.Forms mobile application framework using C# and XAML</li>
+                            <li id="desc">Researched benefits of native versus hybrid and wrapped mobile application development to recommend future development techniques and strategies</li>
+                            <li id="desc">Evaluated the global end-to-end supply chain and recommended process and technology improvements utilizing Lean Six Sigma methodology</li>
+                        </ul>
+                </ul>
+                <li id="workplace"><b>Marshalls</b></li>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                        <li id="job">Sales Associate (2016-2018)</li>
+                        <ul>
+                            <li id="desc">Provided excellent customer service at point of sale and cross-trained in all departments</li>
+                            <li id="desc">Received the highest audit score on department organization</li>
+                        </ul>
+                    </ul>
+            </ul>
+        </div>
+    </div>
 
+    <div class="section" id="section3">
+        <div id="content">
+            <h1>Skills</h1>
+            <ul style="list-style-type: none; padding-left: 20px;">
+                <li id="workplace"><b>Technical</b></li>
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li id="job">Languages</li>
+                    <ul>
+                        <li id="desc">Python</li>
+                        <li id="desc">Java</li>
+                        <li id="desc">JavaScript</li>
+                        <li id="desc">NodeJS</li>
+                        <li id="desc">C#</li>
+                        <li id="desc">HTML</li>
+                        <li id="desc">CSS</li>
+                        <li id="desc">Swift</li>
+                        <li id="desc">SQL</li>
+                        <li id="desc">Solidity</li>
+                    </ul>
+                </ul>
+                <li id="workplace"><b>Non-Technical</b></li>
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li id="job">Scaled Agile Framework for Lean Enterprises (SAFe)</li>
+                    <ul>
+                        <li id="desc">A knowledge base of proven, integrated principles, practices; and competencies for lean, agile; and DevOps</li>
+                    </ul>
+                    <li id="job">Lean Six Sigma Yellow Belt</li>
+                    <ul>
+                        <li id="desc">A data-driven methodology to continuously improve business processes</li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section" id="section4">
+        <div id="content">
+            <h1>Projects</h1>
+            <ul style="list-style-type: none; padding-left: 20px;">
+                <li id="workplace"><b>iPhone Applications</b></li>
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li id="job">Emergency Whistle</li>
+                    <ul>
+                        <li id="desc">Built using Objective-C</li>
+                        <li id="desc">Achieved rank of #1 free application in Turkey after earthquake aftermaths</li>
+                    </ul>
+                    <li id="job">Lean Calc Kit</li>
+                    <ul>
+                        <li id="desc">Built using Objective-C</li>
+                        <li id="desc">Speciality calculator for Lean Six Sigma operations</li>
+                    </ul>
+                    <li id="job">Recipe Me</li>
+                    <ul>
+                        <li id="desc">Built using Swift</li>
+                        <li id="desc">Personal and private digital cookbook</li>
+                    </ul>
+                </ul>
+                <li id="workplace"><b>School Projects</b></li>
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li id="job">EleNa Elevation Based Routing System</li>
+                    <ul>
+                        <li id="desc">Worked with team of peers to design a routing system which maximizes or minimizes elevation gain</li>
+                        <li id="desc">Built using Python and various API libraries</li>
+                    </ul>
+                    <li id="job">Ultimate Software Job Board</li>
+                    <ul>
+                        <li id="desc">Web-based application, allowed users to post and apply to jobs</li>
+                        <li id="desc">Collaborated with an Agile team of 13 students to create a job board web application</li>
+                        <li id="desc">Implemented both backend and frontend interfaces using NodeJS and MongoDB</li>
+                    </ul>
+                </ul>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html><html lang="en">
